@@ -21,7 +21,7 @@ export const getAuthorById = async (req, res) => {
         }
         res.status(200).json(author);
     } catch (error) {
-        console.log("Error in getAuthors", error.message)
+        console.log("Error in getAuthors by id", error.message)
         res.status(500).json({ message: error.message })
     }
 }
